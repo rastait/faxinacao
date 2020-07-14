@@ -1,0 +1,631 @@
+<!--
+
+=========================================================
+* Argon Design System - v1.1.0
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/argon-design-system
+* Copyright 2019 Creative Tim (https://www.creative-tim.com)
+* Licensed under MIT (https://github.com/creativetimofficial/argon-dashboard/blob/master/LICENSE.md)
+
+* Coded by Creative Tim
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Start your development with a Design System for Bootstrap 4.">
+        <meta name="author" content="Creative Tim">
+        <title>Pop Serviços</title>
+        <!-- Favicon -->
+        <link href="assets/img/brand/favicon.png" rel="icon" type="image/png">
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+        <!-- Icons -->
+        <link href="assets/vendor/nucleo/css/nucleo.css" rel="stylesheet">
+        <link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <!-- Argon CSS -->
+        <link type="text/css" href="assets/css/argon.css?v=1.1.0" rel="stylesheet">
+        <link type="text/css" href="assets/css/style.css" rel="stylesheet">
+
+
+
+        <script src="acao.js"></script>
+      
+        <link>
+
+      
+        
+      </head>
+</head>
+
+<body>
+  
+<!--menu-->
+
+<header class="header-global">
+    <nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom" style="background-color:  #0E5AA7;">
+      <div class="container">
+        <a class="navbar-brand mr-lg-5" href="./index.html">   
+          <img alt="image" src="material/branco.png" >
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbar_global">
+          <div class="navbar-collapse-header">
+            <div class="row">
+              <div class="col-6 collapse-brand">
+                <a href="./index.html">
+                  <img alt="image" src="assets/img/brand/blue.png">
+                </a>
+              </div>
+              <div class="col-6  collapse-close">
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
+                  <span></span>
+                  <span></span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
+            
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link" data-toggle="dropdown" role="button">
+                <i class="ni ni-collection d-lg-none"></i>
+                <span class="nav-link-inner--text text-white">Contratar</span>
+              </a>
+              <div class="dropdown-menu">
+                <a href="casa.html" class="dropdown-item">Minha Casa</a>
+                <a href="empresa.html" class="dropdown-item">Minha Empresa</a>
+               
+              </div>
+            </li>
+            <a class=" text-white"  href="trabalhe.html" role="tab">Trabalhe na Pop</a>
+
+          </ul>
+          <ul class="navbar-nav align-items-lg-center ml-lg-auto">
+            <li class="nav-item">
+              <a class="nav-link nav-link-icon" href="https://www.facebook.com/POPLIMPEZA/" target="_blank" data-toggle="tooltip" title="Pop no Face">
+                <i class="fa fa-facebook-square"></i>
+                <span class="nav-link-inner--text d-lg-none">Facebook</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-icon" href="#" target="_blank" data-toggle="tooltip" title="Pop no Instagram">
+                <i class="fa fa-instagram"></i>
+                <span class="nav-link-inner--text d-lg-none">Instagram</span>
+              </a>
+            </li>
+           
+            <li class="nav-item">
+              
+            </li>
+            <li class="nav-item d-none d-lg-block ml-lg-4">
+              <a href="https://www.creative-tim.com/product/argon-design-system" target="_blank" class="btn btn-neutral btn-icon">
+                <span class="btn-inner--icon">
+                  <i class=" mr-2"></i>
+                </span>
+                <span class="nav-link-inner--text">Cadastrar</span>
+                
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+<!--menu-->
+
+
+
+
+
+<div class="container">
+    <div class="py-5 text-center">
+      <img class="d-block mx-auto mb-4" src="../../assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+      <h2>Formulário de Agendamento</h2>
+    </div>
+
+    <div class="row" >
+      <div class="col-md-4 order-md-2 mb-4"   id="preco"  style="display:none">
+        <h4 class="d-flex justify-content-between align-items-center mb-3">
+          <span class="text-muted"></span>
+          <span class="badge badge-secondary badge-pill"></span>
+        </h4>
+        <ul class="list-group mb-3">
+          <li class="list-group-item d-flex justify-content-between lh-condensed">
+            <div>
+              <h6 class="my-0">Serviço</h6>
+              <small class="text-muted">Breve descrição</small>
+            </div>
+            <span class="text-muted">                 <div id="divTeste" aria-required="true"> </div>
+            </span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-condensed">
+            <div id="lar">
+              <h6 class="my-0">Seu Lar</h6>
+              <small class="text-muted">Breve descrição</small>
+            </div>
+            <span class="text-muted">   <div id="divLar"> </div>   </span>
+          </li>
+         
+          <li class="list-group-item d-flex justify-content-between bg-light">
+            <div class="text-success">
+              <h6 class="my-0">Código de promoção</h6>
+              <small></small>
+            </div>
+            <span class="text-success"></span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between">
+            <span>Total (BRL)</span>
+            <strong> <div id="divTeste"> </div></strong>
+          </li>
+        </ul>
+
+        <form class="card p-2"  >
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Código promocional">
+            <div class="input-group-append">
+              <button type="submit" class="btn btn-secondary">Resgatar</button>
+            </div>
+          </div>
+        </form>
+      </div>
+<!--  Servico -->
+      <div class="col-md-8 order-md-1">
+        <h4 class="mb-3">&nbsp; Escolha um Serviço</h4>
+        <form  method="GET"  action="dados.php" class="needs-validation" >
+          <div class="row">
+          </div>
+
+          <div class="col-md-4 mb-3">
+          <label for="servico">Tipo de Serviço ?</label>
+           <select class="custom-select d-block w-100 invalid-feedback" id="servico" name="servico"  onchange="servicos(this.value)"  >
+           <option >Escolha...</option>
+           <option>Limpeza Pesada</option>
+           <option>Limpeza Padrão</option>
+           <option  >Passar Roupa</option>
+
+                    </select>
+         <div class="invalid-feedback">
+             Por favor, insira uma opção válida.                                
+       </div>       
+      </div>
+<!--  Servico --> 
+                     
+
+
+
+                                                   <!--  Tipode limpeza pesada  --> 
+
+        <!--  Passar roupa apaga o restante  -->
+          <div id="sumir">
+        <!--  Passar roupa apaga o restante  --> 
+
+                        <div class="container"  id="pesadaAparece" style="display:none" >
+                            <div class="row">
+                            
+                               <div class="col-md-4 mb-3">
+                                      <label for="pais">Qual tipo de Limpeza Pesada</label>
+                                            <select class="custom-select d-block w-100" id="lar" name="limpezaPesada" >
+                                   <option value="">Escolha...</option>
+                                   <option>De Rotina</option>
+                                   <option>Pré Mudança</option>
+                                   <option>Pós Obra</option>                      
+                                 </select>
+                                 <div class="invalid-feedback">
+                                     Por favor, insira uma opção válida.                               
+                                    </div>
+                               </div>                         
+                             </div>
+ 
+                            </div>
+                                                <!--  Tipode limpeza pesada  --> 
+
+                        <!--  Seu lar  --> 
+   
+
+                        <div class="container" >
+                           <div class="row">
+                           
+                              <div class="col-md-4 mb-3">
+                                     <label for="pais">Como é sua casa</label>
+                                           <select class="custom-select d-block w-100" id="lar" name="lar"  onchange="Lar(this.value)">
+                                  <option value="">Escolha...</option>
+                                  <option>Studio</option>
+                                  <option>Apartamento</option>
+                                  <option>Casa</option>                      
+                                </select>
+                                <div class="invalid-feedback">
+                                    Por favor, insira uma opção válida.                               
+                                   </div>
+                              </div>                         
+                            </div>
+
+                          </div>
+                                                  <!--  Seu lar  --> 
+
+                          <div class="container"  >
+                              <div class="row">
+                                 <div class="col-md-4 mb-3">
+                                        <label for="pais">Quantos Quartos ?</label>
+                                              <select class="custom-select d-block w-100" id="quartos"  name="quartos" >
+                                     <option value="">Escolha...</option>
+                                     <option>Nenhum</option>
+
+                                     <option>1</option>
+                                     <option>2</option>
+                                     <option>3</option>
+                                     <option>4</option>
+                                     <option>5</option>
+                                     <option>6</option>
+                                     <option>7</option>
+                                     <option>8</option>
+                                     <option>9</option>
+                                     <option>10</option>
+                                     <option>11</option>
+                                     <option>12</option>
+                                     <option>13</option>
+                                     <option>14</option>
+                                     <option>15</option>
+                                     <option>16</option>
+   
+                                   </select>
+                                   <small class="text-muted">Sala e cozinha ja estão inclusos</small>
+
+                                   <div class="invalid-feedback">
+                                       Por favor, insira uma opção válida.                               
+                                 </div>
+ </div>
+
+
+                        <!--  Seu lar  --> 
+
+                                 <div class="col-md-4 mb-3" id="sumir" >
+                                   <label for="estado">Quantos Banheiros ?</label>
+                                   <select class="custom-select d-block w-100" id="banheiros" name="banheiros" >
+                                     <option value="">Escolha...</option>
+                                     <option>Nenhum</option>
+                                     <option>1</option>
+                                     <option>2</option>
+                                     <option>3</option>
+                                     <option>4</option>
+                                     <option>5</option>
+                                     <option>6</option>
+                                     <option>7</option>
+                                     <option>8</option>
+                                     <option>9</option>
+                                     <option>10</option>
+                                     <option>11</option>
+                                     <option>12</option>
+                                     <option>13</option>
+                                     <option>14</option>
+                                     <option>15</option>
+                                     <option>16</option>                                </select>
+                                   <div class="invalid-feedback">
+                                     Por favor, insira uma opção válida.
+                                   </div>
+                                 </div>
+                               </div>
+                              </div>
+                            </div>
+
+                            <div class="container">
+
+                               <label for="pais"> Data do Agendamento</label><br>
+
+
+                               <input id="date" name="data"  class="custom-select d-block " type="date"  required>
+<br>
+<!--range-->
+<label for="pais">Quantidade de horas</label><br>
+
+<input  class="col-md-4 mb-3" type="number" id="appt" name="qtd_horas"
+       min="3"  required>        
+       <small class="text-muted">Minimo 3 Horas</small>
+       
+       <br>
+<!--range-->
+
+
+
+
+                               <label for="pais">Qual Horário ?</label><br>
+
+                               
+                               <div class="form-check form-check-inline">
+                                <input class="form-check-input" name="horario" type="checkbox" id="inlineCheckbox1" value="07:00 - 16:00" >
+                                <label class="form-check-label" for="inlineCheckbox1">07:00 - 16:00</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox"  name="horario" id="inlineCheckbox2" value="08:00 - 17:00" >
+                                <label class="form-check-label" for="inlineCheckbox2">08:00 - 17:00</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox"  name="horario" id="inlineCheckbox2" value="09:00 - 18:00" >
+                                <label class="form-check-label" for="inlineCheckbox2">09:00 - 18:00</label>
+                              </div>
+   
+                               <hr class="mb-4">
+                               <h4 class="mb-3">UM POUCO SOBRE VOCÊ</h4>
+                     
+                               <label for="estado">Nome Completo </label>
+
+
+                 <div class="form-group has-success">
+                     <input type="text" placeholder="Seu Nome" class="form-control form-control-alternative is-valid" name="nome" required />
+                     
+                   </div>
+
+                   <label for="estado">CEP </label>
+
+
+                   <div class="form-group has-success">
+                       <input type="text" placeholder="CEP" class="form-control form-control-alternative is-valid" name="cep" required/>
+                       
+                     </div>
+                     <div class="invalid-feedback">
+                       O Nome CEP
+                     </div>
+                     <label for="estado">Complemento </label>
+
+                     <div class="form-group has-success">
+                      <input type="text" placeholder="complemento" class="form-control form-control-alternative is-valid" name="complemento" required/>
+                    </div>
+
+                      <div class="invalid-feedback">
+                        O Endereço é obrigatório.
+                      </div>
+               
+                 
+          <div class="row">
+            <div class="col-md-6 mb-3">
+               
+                <small class="text-muted">Email</small>
+
+              <div class="form-group has-success">
+              <input type="text" placeholder="Seu Email" class="form-control form-control-alternative is-valid" name="email" required/>
+            </div>
+              <div class="invalid-feedback">
+                O E-mail é obrigatório.
+              </div>
+            </div>
+                
+            <div class="col-md-6 mb-3">
+
+                <small class="text-muted">CPF</small>
+
+
+                <div class="form-group has-success">
+                    <input type="text" placeholder="Seu CPF" class="form-control form-control-alternative is-valid" name="cpf" required/>
+                  </div>
+                    <div class="invalid-feedback">
+                      O CPF é obrigatório.
+                    </div>
+                  </div>
+                </div>
+
+          
+          <hr class="mb-4">
+          <button class="btn btn-primary btn-lg btn-block" type="submit">Ver Preço</button>
+        </form>
+      </div>
+  </div>
+  </div>
+<br>
+
+  <footer class="page-footer font-small indigo">
+
+      <!-- Footer Links -->
+      <div class="container-fluid text-center text-md-left ">
+    
+        <!-- Grid row -->
+        <div class="row">
+    
+          <!-- Grid column -->
+          <div class="col-md-3 mx-auto">
+    
+            <!-- Links -->
+          
+    <br>
+            <img alt="image" src="./assets/img/brand/Imagem 1.png">
+       
+          </div>
+          <!-- Grid column -->
+    
+          <hr class="clearfix w-100 d-md-none">
+    
+          <!-- Grid column -->
+          <div class="col-md-3 mx-auto ">
+    
+            <!-- Links -->
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4"  style="color:  #0E5AA7">Serviços</h5>
+    
+            <ul class="list-unstyled">
+              <li>
+                <a href="casa.html">Minha Casa</a>
+              </li>
+              <li>
+                <a href="empresa.html">Minha Empresa</a>
+              </li>
+        
+              <li>
+                <a href="trabalhe.html">Trabalhe na Pop</a>
+              </li>
+
+            </ul>
+    
+          </div>
+          <!-- Grid column -->
+    
+          <hr class="clearfix w-100 d-md-none">
+    
+          <!-- Grid column -->
+          <div class="col-md-3 mx-auto">
+    
+            <!-- Links -->
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4"  style="color:  #0E5AA7">Cadastro</h5>
+    
+            <ul class="list-unstyled">
+              <li>
+                <a href="cadastro.html">Cadastrar</a>
+              </li>
+           
+            </ul>
+    
+          </div>
+          <!-- Grid column -->
+    
+          <hr class="clearfix w-100 d-md-none">
+    
+          <!-- Grid column -->
+          <div class="col-md-3 mx-auto">
+    
+            <!-- Links -->
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4"  style="color:  #0E5AA7">Contato</h5>
+    
+            <ul class="list-unstyled">
+              <li>
+                  <i class="fa fa-envelope" style="color:  #0E5AA7" ></i>
+
+                <a href="#!">atendimento@poplimpeza.com.br</a>
+              </li>
+              <li>
+                <i class="fa fa-whatsapp"  style="color:  #0E5AA7"></i>
+                <a href="#!">(11) 99708-0758</a>
+              </li>
+              <li>
+                  <i class="fa fa-whatsapp"  style="color:  #0E5AA7" ></i>
+
+                <a href="#!">(11) 98273-5585s</a>
+              </li>
+              <li>
+              </li>
+            </ul>
+    
+          </div>
+          <!-- Grid column -->
+    
+        </div>
+        <!-- Grid row -->
+    
+      </div>
+      <!-- Footer Links -->
+    
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">© 2018 Copyright:
+        <a href="www.poplimpeza.com.br"  style="color:  #0E5AA7" >Pop Serviços</a>
+      </div>
+      <!-- Copyright -->
+    
+    </footer>
+
+    <script>
+     
+
+    //
+    var inputs = document.querySelectorAll('input');
+
+function verificar() {
+    return [].filter.call(inputs, function (input) {
+        return input.checked;
+    }).length;
+}
+document.querySelector('button').addEventListener('click', function () {
+    var valido = verificar();
+    if (!valido) alert('Falta escolher uma checkbox!');
+    else alert('Tudo ok!');
+});
+
+    //
+
+
+     // Serviços
+      function servicos(valor){
+ 
+     if (valor == "Passar Roupa"){
+      document.getElementById("preco").style.display = 'block';
+      document.getElementById('divTeste').innerHTML = valor;
+          
+     var display = document.getElementById("sumir").style.display;
+     if (display == "block"){
+       document.getElementById("sumir").style.display = 'none';
+              document.getElementById("sumir").style.display = 'none';
+
+       document.getElementById("lar").style.display = 'none';
+
+     }else
+       document.getElementById("sumir").style.display = 'none'; 
+       document.getElementById("lar").style.display = 'none';
+
+      } else if  (valor == "Limpeza Pesada" || "Limpeza Padrão" || "Limpeza Pós Obra" ){
+       
+       if (valor == "Limpeza Pesada") {
+
+        document.getElementById("pesadaAparece").style.display = 'block';
+       }else{
+        document.getElementById("pesadaAparece").style.display = 'none';
+
+       }
+
+        document.getElementById('divTeste').innerHTML = valor;
+        document.getElementById("preco").style.display = 'block';
+        document.getElementById("lar").style.display = 'block';
+      
+   if (display == "none"){
+       document.getElementById("sumir").style.display = 'block';
+       document.getElementById("lar").style.display = 'block';
+
+   }else
+       document.getElementById("sumir").style.display = 'block';
+       document.getElementById("lar").style.display = 'block';
+ 
+      } 
+ 
+      }
+                // Serviços ''
+
+                //seu lar
+
+//lar
+function Lar(valor2){
+
+  document.getElementById('divLar').innerHTML = valor2;
+
+}
+//lar
+
+//limpeza Pesada
+function limpezaPesada(){
+  var display = document.getElementById("sumir").style.display;
+  document.getElementById("pesadaAparece").style.display = 'block';
+
+}
+//limpeza Pesada
+
+      </script>
+
+  <!-- Core -->
+  <script src="jquery.min.js"></script>
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/popper/popper.min.js"></script>
+  <script src="assets/vendor/bootstrap/bootstrap.min.js"></script>
+  <script src="assets/vendor/headroom/headroom.min.js"></script>
+  <!-- Optional JS -->
+  <script src="assets/vendor/onscreen/onscreen.min.js"></script>
+  <script src="assets/vendor/nouislider/js/nouislider.min.js"></script>
+  <script src="assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+  <!-- Argon JS -->
+  <script src="assets/js/argon.js?v=1.1.0"></script>  
+  
+  <a href="https://api.whatsapp.com/send?phone=551198273-5585&text=Ola" Style=" position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888; z-index:1000;" target="_blank"> <i style="margin-top:16px" class="fa fa-whatsapp"></i> </a>
+
+</body>
+
+</html>

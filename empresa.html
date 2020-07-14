@@ -1,0 +1,688 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Faxinação -Limpeza">
+  <meta name="author" content="RastaIt">
+  <title>Faxinação</title>
+  <!-- Favicon -->
+  <link href="material/logo_novo/favicon.ico" rel="icon" type="image/png">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+  <!-- Icons -->
+  <link href="./assets/vendor/nucleo/css/nucleo.css" rel="stylesheet">
+  <link href="./assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <!-- Argon CSS -->
+  <link type="text/css" href="./assets/css/argon.css?v=1.1.0" rel="stylesheet">
+  <link type="text/css" href="./assets/css/style.css" rel="stylesheet">
+
+  <link type="text/css" href="style.css" rel="stylesheet">
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-156427377-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-156427377-1');
+</script>
+
+
+
+  
+</head>
+
+<body>
+  
+<!--menu-->
+
+<header class="header-global">
+    <nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom" style="background-color:  #0E5AA7;">
+      <div class="container">
+        <a class="navbar-brand mr-lg-5" href="./index.html">   
+          <img alt="image" src="material/logo_novo/logo_menu.png" >
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbar_global">
+          <div class="navbar-collapse-header">
+            <div class="row">
+              <div class="col-6 collapse-brand">
+                <a href="./index.html">
+                  <img alt="image" src="material/logo_novo/Logo.png">
+                </a>
+              </div>
+              <div class="col-6  collapse-close">
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
+                  <span></span>
+                  <span></span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
+            
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link" data-toggle="dropdown" role="button">
+                <i class="ni ni-collection d-lg-none"></i>
+                <span  role="tab">Contratar</span>
+              </a>
+              <div class="dropdown-menu">
+                <a href="casa.html" class="dropdown-item">Meu lar</a>
+                <a href="empresa.html" class="dropdown-item">Minha Empresa</a>
+              </div>
+            </li>
+            <li>       
+
+               
+              <a href="trabalhe.html" class="nav-link" role="button">
+                <span >Seja um parceiro</span>
+              </a>
+              
+            </li>
+          </ul>
+          <ul class="navbar-nav align-items-lg-center ml-lg-auto">
+            <li class="nav-item">
+              <a class="nav-link nav-link-icon" href="" target="_blank" data-toggle="tooltip" title="Pop no Face">
+                <i class="fa fa-facebook-square"></i>
+                <span class="nav-link-inner--text d-lg-none">Facebook</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-icon" href="" target="_blank" data-toggle="tooltip" title="Pop no Instagram">
+                <i class="fa fa-instagram"></i>
+                <span class="nav-link-inner--text d-lg-none">Instagram</span>
+              </a>
+            </li>
+           
+            <li class="nav-item">
+              
+            </li>
+            <li class="nav-item d-none d-lg-block ml-lg-4">
+              <a href="cadastro.html"  class="btn btn-neutral btn-icon">
+                <span class="btn-inner--icon">
+                  <i class=" mr-2"></i>
+                </span>
+                <span class="nav-link-inner--text">Cadastro</span>
+                
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+<!--menu-->
+
+
+
+
+
+<div class="container">
+    <div class="py-5 text-center">
+      <img class="d-block mx-auto mb-4" src="../../assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+      <h2>Formulário de Agendamento</h2>
+    </div>
+
+    <div class="row" >
+      <div class="col-md-4 order-md-2 mb-4"   id="preco"  style="display:none">
+        <h4 class="d-flex justify-content-between align-items-center mb-3">
+          <span class="text-muted"></span>
+          <span class="badge badge-secondary badge-pill"></span>
+        </h4>
+        <ul class="list-group mb-3">
+          <li class="list-group-item d-flex justify-content-between lh-condensed">
+            <div>
+              <h6 class="my-0">Serviço</h6>
+              <small class="text-muted">Breve descrição</small>
+            </div>
+            <span class="text-muted">                 <div id="divTeste" aria-required="true"> </div>
+            </span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-condensed">
+            <div id="lar">
+              <h6 class="my-0">Seu Lar</h6>
+              <small class="text-muted">Breve descrição</small>
+            </div>
+            <span class="text-muted">   <div id="divLar"> </div>   </span>
+          </li>
+         
+          <li class="list-group-item d-flex justify-content-between bg-light">
+            <div class="text-success">
+              <h6 class="my-0">Código de promoção</h6>
+              <small></small>
+            </div>
+            <span class="text-success"></span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between">
+            <span>Total (BRL)</span>
+            <strong> <div id="divTeste"> </div></strong>
+          </li>
+        </ul>
+
+        <form class="card p-2"  >
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Código promocional">
+            <div class="input-group-append">
+              <button type="submit" class="btn btn-secondary">Resgatar</button>
+            </div>
+          </div>
+        </form>
+      </div>
+<!--  Servico -->
+      <div class="col-md-8 order-md-1">
+        <h4 class="mb-3">&nbsp; Escolha um Serviço</h4>
+        <form  method="GET"  action="dados.php" class="needs-validation" >
+          <div class="row">
+          </div>
+
+          <div class="col-md-4 mb-3">
+          <label for="servico">Tipo de Serviço ?</label>
+           <select class="custom-select d-block w-100 invalid-feedback" id="servico" name="servico"  onchange="servicos(this.value)"  >
+           <option >Escolha...</option>
+           <option>Limpeza Pesada</option>
+           <option>Limpeza Padrão</option>
+           <option  >Passar Roupa</option>
+
+                    </select>
+         <div class="invalid-feedback">
+             Por favor, insira uma opção válida.                                
+       </div>       
+      </div>
+<!--  Servico --> 
+                     
+
+
+
+                                                   <!--  Tipode limpeza pesada  --> 
+
+
+        <div class="container" >
+          <div class="row">
+          
+             <div class="col-md-4 mb-3">
+                    <label for="pais">Como é sua casa</label>
+                          <select class="custom-select d-block w-100" id="lar" name="lar"  onchange="Lar(this.value)">
+                 <option value="">Escolha...</option>
+                 <option>Studio</option>
+                 <option>Apartamento</option>
+                 <option>Casa</option>                      
+               </select>
+               <div class="invalid-feedback">
+                   Por favor, insira uma opção válida.                               
+                  </div>
+             </div>                         
+           </div>
+
+         </div>
+
+
+
+        <!--  Passar roupa apaga o restante  -->
+        <div id="sumir">
+          <!--  Passar roupa apaga o restante  --> 
+  
+
+
+                        <div class="container"  id="pesadaAparece" style="display:none" >
+                            <div class="row">
+                            
+                               <div class="col-md-4 mb-3">
+                                      <label for="pais">Qual tipo de Limpeza Pesada</label>
+                                            <select class="custom-select d-block w-100" id="lar" name="limpezaPesada" >
+                                   <option value="">Escolha...</option>
+                                   <option>Pré Mudança</option>
+                                   <option>Pós Obra</option>                      
+                                 </select>
+                                 <div class="invalid-feedback">
+                                     Por favor, insira uma opção válida.                               
+                                    </div>
+                               </div>                         
+                             </div>
+ 
+                            </div>
+                                                <!--  Tipode limpeza pesada  --> 
+
+                        <!--  Seu lar  --> 
+   
+
+
+                          <div class="container"  >
+                              <div class="row">
+                                 <div class="col-md-4 mb-3">
+                                        <label for="pais">Quantos Quartos ?</label>
+                                              <select class="custom-select d-block w-100" id="quartos"  name="quartos" >
+                                     <option value="">Escolha...</option>
+                                     <option>Nenhum</option>
+
+                                     <option>1</option>
+                                     <option>2</option>
+                                     <option>3</option>
+                                     <option>4</option>
+                                     <option>5</option>
+                                     <option>6</option>
+                                     <option>7</option>
+                                     <option>8</option>
+                                     <option>9</option>
+                                     <option>10</option>
+                                     <option>11</option>
+                                     <option>12</option>
+                                     <option>13</option>
+                                     <option>14</option>
+                                     <option>15</option>
+                                     <option>16</option>
+   
+                                   </select>
+                                   <small class="text-muted">Sala e cozinha ja estão inclusos</small>
+
+                                   <div class="invalid-feedback">
+                                       Por favor, insira uma opção válida.                               
+                                 </div>
+ </div>
+
+
+                        <!--  Seu lar  --> 
+
+                                 <div class="col-md-4 mb-3" id="sumir" >
+                                   <label for="estado">Quantos Banheiros ?</label>
+                                   <select class="custom-select d-block w-100" id="banheiros" name="banheiros" >
+                                     <option value="">Escolha...</option>
+                                     <option>Nenhum</option>
+                                     <option>1</option>
+                                     <option>2</option>
+                                     <option>3</option>
+                                     <option>4</option>
+                                     <option>5</option>
+                                     <option>6</option>
+                                     <option>7</option>
+                                     <option>8</option>
+                                     <option>9</option>
+                                     <option>10</option>
+                                     <option>11</option>
+                                     <option>12</option>
+                                     <option>13</option>
+                                     <option>14</option>
+                                     <option>15</option>
+                                     <option>16</option>                                </select>
+                                   <div class="invalid-feedback">
+                                     Por favor, insira uma opção válida.
+                                   </div>
+                                 </div>
+                               </div>
+                              </div>
+                            </div>
+
+                            <div class="container">
+
+                               <label for="pais"> Data do Agendamento</label><br>
+
+
+                               <input id="date" name="data"  class="custom-select d-block " type="date"  required>
+
+<!--range-->
+
+
+
+
+                               <label for="pais">Que horário começaremos ?</label><br>
+
+                               
+                               <div class="form-check form-check-inline">
+                                <input class="form-check-input" name="horario" type="checkbox" id="inlineCheckbox1" value="07:00" >
+                                <label class="form-check-label" for="inlineCheckbox1">07:00</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox"  name="horario" id="inlineCheckbox2" value="08:00" >
+                                <label class="form-check-label" for="inlineCheckbox2">08:00 </label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox"  name="horario" id="inlineCheckbox2" value="09:00" >
+                                <label class="form-check-label" for="inlineCheckbox2">09:00 </label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox"  name="horario" id="inlineCheckbox2" value="10:00" >
+                                <label class="form-check-label" for="inlineCheckbox2">10:00 </label>
+                              </div>
+   
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox"  name="horario" id="inlineCheckbox2" value="11:00" >
+                                <label class="form-check-label" for="inlineCheckbox2">11:00 </label>
+                              </div>
+   
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox"  name="horario" id="inlineCheckbox2" value="12:00" >
+                                <label class="form-check-label" for="inlineCheckbox2">12:00 </label>
+                              </div>
+
+                               <hr class="mb-4">
+                               <h4 class="mb-3">UM POUCO SOBRE VOCÊ</h4>
+                     
+                               <label for="estado">Nome Completo </label>
+
+
+                 <div class="form-group has-success">
+                     <input type="text" placeholder="Seu Nome" class="form-control form-control-alternative is-valid" name="nome" required />
+                     
+                   </div>
+
+                   <label for="estado">CEP </label>
+
+
+                   <div class="form-group has-success">
+                       <input type="text" placeholder="CEP" class="form-control form-control-alternative is-valid" name="cep" required/>
+                       
+                     </div>
+                     <div class="invalid-feedback">
+                       O Nome CEP
+                     </div>
+                     <label for="estado">Endereço </label>
+
+                     <div class="form-group has-success">
+                      <input type="text" placeholder="complemento" class="form-control form-control-alternative is-valid" name="complemento" required/>
+                    </div>
+
+                      <div class="invalid-feedback">
+                        O Endereço é obrigatório.
+                      </div>
+               
+                 
+          <div class="row">
+            <div class="col-md-6 mb-3">
+               
+                <small class="text-muted">Email</small>
+
+              <div class="form-group has-success">
+              <input type="text" placeholder="Seu Email" class="form-control form-control-alternative is-valid" name="email" required/>
+            </div>
+              <div class="invalid-feedback">
+                O E-mail é obrigatório.
+              </div>
+            </div>
+                
+            <div class="col-md-6 mb-3">
+
+                <small class="text-muted">Telefone</small>
+
+
+                <div class="form-group has-success">
+                    <input type="text" placeholder="Seu Telefone" class="form-control form-control-alternative is-valid" name="telefone" required/>
+                  </div>
+                    <div class="invalid-feedback">
+                      O Telefone é obrigatório.
+                    </div>
+                  </div>
+                  
+                </div>
+                <small class="text-muted">Obervação</small>
+
+                <div class="form-group has-success">
+                  <input type="text" placeholder="Obervação" class="form-control form-control-alternative is-valid" name="obs" />
+                </div>
+
+                  <div class="invalid-feedback">
+                    O Endereço é obrigatório.
+                  </div>
+           
+          <hr class="mb-4">
+          <button class="btn btn-primary btn-lg btn-block" type="submit">Ver Preço</button>
+        </form>
+      </div>
+  </div>
+  </div>
+</div>
+
+<br>
+<footer class="page-footer font-small indigo">
+
+  <!-- Footer Links -->
+  <div class="container-fluid text-center text-md-left ">
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mx-auto">
+
+        <!-- Links -->
+      
+<br>
+<img alt="image" src="material/logo_novo/rodape.png">
+   
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mx-auto ">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4"  style="color: #33D644;">Serviços</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="casa.html">Meu lar</a>
+          </li>
+          <li>
+            <a href="empresa.html">Minha Empresa</a>
+          </li>
+
+          <li>
+              <a href="trabalhe.html">Seja um parceiro</a>
+            </li>
+          
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mx-auto">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4"   style="color: #33D644;"> Faxinação  </h5>
+       
+        <ul class="list-unstyled">
+          <li>
+            <a href="cadastro.html">Cadastro</a>
+          </li>
+          
+          <li>
+            <a href="cadastro.html" data-toggle="modal" data-target="#myModal">Termos de uso</a>
+          </li>
+          <li>
+            <a href="admin.php">Login</a>
+          </li>
+
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mx-auto">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4" style="color: #33D644;">Contato</h5>
+
+        <ul class="list-unstyled">
+          <li>
+              <i class="fa fa-envelope" style="color:  #0E5AA7" ></i>
+
+            <a href="#!">falecom@faxinacao.com</a>
+          </li>
+        
+          <li>
+              <i class="fa fa-whatsapp"  style="color:  #0E5AA7" ></i>
+
+            <a href="#!">(11) 98273-5585</a>
+          </li>
+          <li>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="www.poplimpeza.com.br"  style="color:  #0E5AA7" >Faxinação</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+
+    <!-- Modal -->
+    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="myModal">
+      <div class="modal-dialog  modal-lg">
+        <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Fechar</button>
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+
+            <h4 class="modal-title">Termos de uso</h4>
+          </div>
+          <div class="modal-body">
+            <p>Termos de Uso
+              Definições do Termo de Uso da Plataforma da PopServiços Tecnologia e Intermediação de Serviços Faxinação, empresa inscrita no CNPJ/MF sob o nº  e com sede na Rua Fradique Coutinho, - São Paulo/SP (Faxinação):<br>
+              Profissional / Parceira / Profissional Parceira: Pessoa física (com CPF) ou jurídica (com MEI) que pode receber, aceitar e rejeitar ofertas de Serviços ou utilizar outras funcionalidades da Plataforma.<br><br>
+              <b>  Serviço:  </b>Qualquer serviço acordado pela Plataforma, com definição de local, data e valor a ser pago à Profissional.<br><br>
+              <b>  Plataforma: </b> O da Pop Limepza e/ou de seus Parceiros Comerciais. Pela Plataforma, Clientes podem solicitar Serviços, enquanto Profissionais podem receber e aceitar ofertas de Serviços, além de usufruir de outras funcionalidades. O acesso à Plataforma se dá por meio de uma Conta individual.<br><br>
+              <b>   Parceiros Comerciais:  </b>Empresas que divulgam a Plataforma e geram demanda por Serviços por meio de canais online (por exemplos, sites e aplicativos) ou canais offline (por exemplo, lojas, telefone, quiosques, etc.).<br><br>
+              Cliente: o Cliente usa a Plataforma para poder solicitar Serviços, e por tal Plataforma consegue contratar Serviços das Profissionais.<br><br>
+              <b>   Avaliação: </b> Pontuação de 1 (um) a 5 (cinco) dada opcionalmente pelo Cliente para a Profissional, ou pela Profissional para o Cliente para avaliar um Serviço.<br><br>
+              <b>   Nota: </b> Nota da Profissional ou do Cliente calculada diariamente a partir das Avaliações recebidas.<br><br>
+              <b> Falta:</b> Serviço agendado, mas não realizado, sem aviso ou cancelamento prévio. Também é considerada falta o Cancelamento realizado na mesma data programada para a execução do Serviço. Essas condições são passíveis de cobrança de Multa.<br><br>
+              <b>  Cancelamentos:</b> Cancelamentos registrados até o fim do dia anterior à execução do Serviço. Essas condições são passíveis de cobrança de Multa.<br><br>
+              <b>  Multa: </b>Em casos de Cancelamento, reagendamentos em cima da hora, ou Falta, serão aplicadas penalidades financeiras contra o Cliente ou a Profissional.<br><br>
+              <b>   Acordos: </b>Valores devidos pela Profissional à Parafuzo, como por exemplo por Multas, Plano de Assinatura para Profissionais, ou danos materiais à propriedade de clientes.<br>
+  Período de Adaptação: Após o Credenciamento, a Profissional passa por um Período de Adaptação de 30 dias, a partir da data de execução do primeiro Serviço agendado.<br><br>
+                           <b>Fechar Por Fora:</b>  Negociação direta de Serviços entre Cliente e Profissional encontrados pela Plataforma (sem transacionar pela Plataforma).<br><br>
+                            <b>    Lista de Tarefas:</b> Especificações de atividades pré-definidas para cada tipo de Serviço anunciado na Plataforma
+              Fontes de Informação: Funcionários da Faxinação, Clientes, outras Profissionais, ou outras fontes.<br><br>
+            <b>    Condições Gerais:</b>
+              Este documento rege o relacionamento entre a Pop Servios, seus Clientes e Parceiros. Acordos e contratos celebrados entre as partes antes desta data (por exemplo, contratos de parceria, contratos de prestação de serviços, termos de uso anteriores, entre outros) perdem sua validade a partir do momento que o Cliente ou Parceiro contrata ou realiza serviços a partir da data de vigência destes Termos de Uso, que é 31 de Janeirol de 2020.<br>
+
+              </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+    <!-- Modal -->
+
+
+    <script>
+     
+
+    //
+    var inputs = document.querySelectorAll('input');
+
+function verificar() {
+    return [].filter.call(inputs, function (input) {
+        return input.checked;
+    }).length;
+}
+
+
+    //
+
+
+     // Serviços
+      function servicos(valor){
+ 
+     if (valor == "Passar Roupa"){
+      document.getElementById("preco").style.display = 'block';
+      document.getElementById('divTeste').innerHTML = valor;
+          
+     var display = document.getElementById("sumir").style.display;
+     if (display == "block"){
+       document.getElementById("sumir").style.display = 'none';
+              document.getElementById("sumir").style.display = 'none';
+
+       document.getElementById("lar").style.display = 'none';
+
+     }else
+       document.getElementById("sumir").style.display = 'none'; 
+       document.getElementById("lar").style.display = 'none';
+
+      } else if  (valor == "Limpeza Pesada" || "Limpeza Pós Obra" ){
+       
+       if (valor == "Limpeza Pesada") {
+
+        document.getElementById("pesadaAparece").style.display = 'block';
+       }else{
+        document.getElementById("pesadaAparece").style.display = 'none';
+
+       }
+
+        document.getElementById('divTeste').innerHTML = valor;
+        document.getElementById("preco").style.display = 'block';
+        document.getElementById("lar").style.display = 'block';
+      
+   if (display == "none"){
+       document.getElementById("sumir").style.display = 'block';
+       document.getElementById("lar").style.display = 'block';
+
+   }else
+       document.getElementById("sumir").style.display = 'block';
+       document.getElementById("lar").style.display = 'block';
+ 
+      } 
+ 
+      }
+                // Serviços ''
+
+                //seu lar
+
+//lar
+function Lar(valor2){
+
+  document.getElementById('divLar').innerHTML = valor2;
+
+}
+//lar
+
+//limpeza Pesada
+function limpezaPesada(){
+  var display = document.getElementById("sumir").style.display;
+  document.getElementById("pesadaAparece").style.display = 'block';
+
+}
+//limpeza Pesada
+
+      </script>
+
+  <!-- Core -->
+  <script src="jquery.min.js"></script>
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/popper/popper.min.js"></script>
+  <script src="assets/vendor/bootstrap/bootstrap.min.js"></script>
+  <script src="assets/vendor/headroom/headroom.min.js"></script>
+  <!-- Optional JS -->
+  <script src="assets/vendor/onscreen/onscreen.min.js"></script>
+  <script src="assets/vendor/nouislider/js/nouislider.min.js"></script>
+  <script src="assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+  <!-- Argon JS -->
+  <script src="assets/js/argon.js?v=1.1.0"></script>  
+  <a href="https://api.whatsapp.com/send?phone=5511982735585&text=Ola" Style=" position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888; z-index:1000;" target="_blank"> <i style="margin-top:16px" class="fa fa-whatsapp"></i> </a>
+
+</body>
+
+</html>

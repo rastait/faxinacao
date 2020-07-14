@@ -1,0 +1,39 @@
+button.bts01 {
+    display: inline-block;
+    
+    border-radius: 3.5px;
+    padding: 17px 40px;
+
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    box-shadow: 1px 1px 1px lightslategray;
+    font-weight: bold;
+}
+button.bts01ativo {
+    display: inline-block;
+    
+    border-radius: 3.5px;
+    padding: 17px 40px;
+
+    background-color: rgb(140, 216, 140);
+    color: white;
+    text-decoration: none;
+    box-shadow: 1px 1px 1px lightslategray;
+    font-weight: bold;
+}
+button:hover.bts01{
+    background-color: rgb(140, 216, 140);
+    color: white;
+}
+div#area01 {
+    /* background-color: rgb(243, 243, 243); */
+    margin-top: 15px;
+    width: 100%;
+    padding: 20px 0px;
+}
+a#close-area01 {
+    display: block;
+    position: absolute;
+    right: 25px;
+}
